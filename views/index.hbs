@@ -1,0 +1,123 @@
+<div id="addBook" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Забронировать столик</h3>
+                <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+                <form id="bookForm">
+                    <div>
+                        <label>
+                            Имя:
+                            <input type='text' placeholder='Your first name' name='firstName' required value="a">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Фамилия:
+                            <input type='text' placeholder='Your last name' name='lastName' required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Email:
+                            <input type='email' placeholder='Email' name='email' required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Телефон:
+                            <input type='tel' placeholder='Your phone number' name='phoneNumber' required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            Дата:
+                            <input type='date' placeholder='Booking date' name='date' required>
+                        </label>
+                    </div>
+                    <button type='submit'>Добавить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="deleteBook" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Удалить бронь</h3>
+                <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+                <form id="deleteForm">
+                    <div>
+                        <label>
+                            Код брони:
+                            <input type='text' placeholder='Your booking code' name='code' required>
+                        </label>
+                    </div>
+                    <button type='submit'>Удалить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="message" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <a href="#close" title="Close" class="close">×</a>
+                <div id="message-body"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<header>
+    <span class="name">Пир эйнхериев</span>
+
+    <a id="first-link" class="header-link" href="#addBook">Забронировать столик</a>
+    <a class="header-link" href="#deleteBook">Удалить бронь</a>
+</header>
+
+<main>
+    <div class="background-image-container">
+        <img class="background-image"  src="/images/eda-v-filmah-1536x994.jpg" alt="food">
+    </div>
+    <span class="big-name">Пир эйнхериев</span>
+
+    <article class="menu">
+        В палатах ждут воинов накрытые столы. И всем вдоволь достается еды и питья; каждое утро искусный повар варит в огромном котле дичину — мясо вепря, а к вечеру вепрь снова цел. И допьяну напиваются эйнхерии чудесного меда, который течет сам из вымени козы Хейдрун прямо в большой жбан. Непростая та коза, непростой тот мед: стоит коза в Валгалле и щиплет иглы с ветвей Мирового дерева Иггдрасиль. Вечную жизнь и вечную молодость дает мед воинам.
+
+        <h3>Меню</h3>
+        <div class="dish">
+            <img class="dish-image" src="/images/lipoviy.jpg">
+            <div class="dish-info">
+                <span class="dish-title">Мед Хейдрун (пчелинный)</span>
+                <pre>Мед козы Хейдрун.
+Дает вечную жизнь и молодость.</pre>
+            </div>
+        </div>
+        <div class="dish">
+            <img class="dish-image" src="/images/myaso-kabana-tushenoe-v-smetane.jpg">
+            <div class="dish-info">
+                <span class="dish-title">Мясо вепря</span>
+                <pre>Мясо большого вепря.</pre>
+            </div>
+        </div>
+    </article>
+
+</main>
+
+<footer>
+<pre>Метод связи: Валькирии, молитвы, достойная смерть
+Местонахождение: Вальгалла
+</pre>
+</footer>
+
+<script type="text/javascript" src="/javascripts/formLogic.js"></script>

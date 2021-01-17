@@ -1,0 +1,66 @@
+<form id="bookForm">
+    <h2>Забронировать столик</h2>
+    <div>
+        <label>
+            Имя:
+            <input type='text' placeholder='Your first name' name='firstName' required value="a">
+        </label>
+    </div>
+    <div>
+        <label>
+            Фамилия:
+            <input type='text' placeholder='Your last name' name='lastName' required>
+        </label>
+    </div>
+    <div>
+        <label>
+            Email:
+            <input type='email' placeholder='Email' name='email' required>
+        </label>
+    </div>
+    <div>
+        <label>
+            Телефон:
+            <input type='tel' placeholder='Your phone number' name='phoneNumber' required>
+        </label>
+    </div>
+    <div>
+        <label>
+            Дата:
+            <input type='date' placeholder='Booking date' name='date' required>
+        </label>
+    </div>
+    <button type='submit'>Добавить</button>
+</form>
+
+<form id="deleteForm">
+    <h2>Удалить бронь</h2>
+    <div>
+        <label>
+            Код брони:
+            <input type='text' placeholder='Your booking code' name='code' required>
+        </label>
+    </div>
+    <button type='submit'>Удалить</button>
+</form>
+
+<div id="addBook" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Название</h3>
+                <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">
+                <p>Содержимое модального окна...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a href="#addBook">Забронировать столик</a>
+<a href="#deleteBook">Удалить бронь</a>
+
+
+<script type="text/javascript" src="/javascripts/formLogic.js"></script>
